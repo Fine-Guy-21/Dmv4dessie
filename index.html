@@ -10,24 +10,44 @@
     <link rel="stylesheet" href="assets/css/about.css" />
     <link rel="stylesheet" href="assets/css/service.css" />
     <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/events.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/css/animate.min.css" />
     <link rel="stylesheet" href="assets/css/custom-animate.css" />
   </head>
   <body>
-    <!-- header -->
+    <!-- header begin-->
+
     <header class="header-container">
       <div class="header-logo-title-container">
         <img src="assets/images/Logo.png" alt="DMV Logo" />
         <h2>DMV For Dessie</h2>
       </div>
-      <ul class="header-nav-container">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Event</a></li>
-        <li><a href="#">Contact</a></li>
+
+      <!-- HAMBURGER -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <!-- OVERLAY -->
+      <div class="overlay" id="overlay"></div>
+
+      <!-- DRAWER NAV -->
+      <ul class="header-nav-container" id="navMenu">
+        <div class="drawer-header">
+          <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+
+        <li><a href="index.html#1">Home</a></li>
+        <li><a href="index.html#about-section">About us</a></li>
+        <li><a href="index.html#3">Event</a></li>
+        <li><a href="index.html#4">Contact</a></li>
       </ul>
+
       <div class="header-donate-button">
         <button class="btn">Donate</button>
       </div>
@@ -36,7 +56,7 @@
 
     <div class="wrapper">
       <!-- hero section begin -->
-      <section class="hero-section">
+      <section class="hero-section"  >
         <div class="hero-section-descriptions">
           <div class="hero-section-descriptions-top">
             <div class="line"></div>
@@ -172,7 +192,7 @@
           </div>
         </div>
 
-        <div class="about-section-images">
+        <div class="about-section-images" id="about-section">
           <div class="custom-layout">
             <!-- Background -->
             <div class="bg-shape"></div>
@@ -215,7 +235,7 @@
           <div class="form-section-left-bottom">
             <div class="progress-wrapper">
               <div class="progress-percentage">
-                <span class="raised">29%</span>                
+                <span class="raised">29%</span>
               </div>
               <div class="progress-bar-container">
                 <div class="form-progress-bar"></div>
@@ -257,6 +277,95 @@
         </div>
       </section>
       <!-- form section ends -->
+
+      <!-- event section begin  -->
+      <section class="event-section" >
+        <div class="event-section-title">
+          <h2>Our Events</h2>
+        </div>
+        <!-- event section title ends -->
+        <div class="event-section-event-container">
+          <div id="event-section-event-inner-container">
+            <!-- event cards will be loaded from js -->
+          </div>
+          <!-- event section event inner container ends -->
+        </div>
+        <!-- event section event container ends -->
+      </section>
+      <!-- event section ends -->
     </div>
+
+    <!-- footer beign -->
+    <footer class="footer-container">
+      <div class="footer-container-top">
+        <div class="footer-container-top-left">
+          <div class="footer-container-top-left-title">
+            <img src="assets/images/Logo.png" alt="DMV Logo " />
+            <h2>DMV For Dessie</h2>
+          </div>
+          <div class="footer-container-top-left-description">
+            A nonprofit organization committed to humanitarian aid and community
+            recovery.
+          </div>
+          <div class="footer-container-top-left-socials">
+            <div class="icon-box">
+              <a href=""
+                ><img
+                  src="assets/images/icon/instagram-100.png"
+                  alt="instagram"
+              /></a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><img src="assets/images/icon/facebook-100.png" alt="facebook"
+              /></a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><img
+                  src="assets/images/icon/telegram-100.png"
+                  alt="facebook"
+                />
+              </a>
+            </div>
+            <div class="icon-box">
+              <a href=""
+                ><img src="assets/images/icon/tiktok-100.png" alt="tiktok"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-container-top-middle">
+          <div class="footer-container-top-middle-title">Get Involved</div>
+          <div class="footer-container-top-middle-links">
+            <a href="#">About Us</a>
+            <a href="#">Volunteer</a>
+            <a href="#">Causes</a>
+            <a href="#">Projects</a>
+            <a href="#">Team</a>
+          </div>
+        </div>
+        <div class="footer-container-top-right">
+          <div class="footer-container-top-right-title">Contacts</div>
+          <div class="footer-container-top-right-addresses">
+            
+              <p>654 Town Street, 88 United States</p>
+            
+            <p>contact_us@dmvfordessie.org</p>
+            <p>0769791991</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-container-copyright">
+        <p>
+          Copyright &copy; Dmv For Dessie | Designed by <a href="https://www.ahaz.io/" >Ahaz Solutions</a>          
+        </p>
+      </div>
+    </footer>
+    <!-- footer ends -->
+
+    <script src="assets/js/eventloader.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
