@@ -20,6 +20,14 @@
   padding: 100px 0;
 }
 
+@media (max-width: 600px) {
+  .footer-container-top {
+    padding: 50px 30px;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
 .footer-container-top-left {
   display: flex;
   flex-direction: column;
@@ -38,6 +46,7 @@
   font-weight: 800;
   line-height: 100%;
 }
+
 .footer-container-top-left-description p {
   font-family: "Work Sans";
   font-size: 20px;
@@ -52,11 +61,13 @@
 }
 
 .footer-container-top-left-socials .icon-box {
-  padding: 5px 10px;
   background-color: #7bc816;
   width: 40px;
   height: 40px;
   border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-box img {
@@ -65,10 +76,10 @@
 }
 
 .footer-container-top-middle-title {
-    font-family: "Shippori Mincho";
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 100%;    
+  font-family: "Shippori Mincho";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .footer-container-top-middle-links {
@@ -77,38 +88,36 @@
   flex-direction: column;
   gap: 5px;
 }
-.footer-container-top-middle-links a{
-    text-decoration: none;
-    color: white;
-    font-weight: 400;
-    font-size: 16px;
-
+.footer-container-top-middle-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
 }
 
 .footer-container-top-right {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container-top-right-title {
-    color: #F89917;
-    font-family: "Shippori Mincho";
-    font-size: 21px;
-    font-weight: 700;
-    line-height: 100%;   
+  color: #f89917;
+  font-family: "Shippori Mincho";
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 100%;
 }
 
 .footer-container-top-right-addresses {
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-container-top-right-addresses p {
-    font-size: 16px;
-    color: white;
-    font-weight: 400;
+  font-size: 16px;
+  color: white;
+  font-weight: 400;
 }
 
 .footer-container-copyright {
@@ -120,15 +129,7 @@
   color: white;
 }
 
-@media (max-width:600px) {
-  .footer-container-top {
-    padding: 50px 30px;
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-.footer-container-copyright{
+.footer-container-copyright {
   text-align: center;
 }
 
-}
