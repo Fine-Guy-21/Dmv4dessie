@@ -34,12 +34,13 @@
 }
 
 .events-section-title > h2 {
-  margin-top: 0;
   font-weight: 700;
   font-family: "Raleway";
-  font-size: 60px;
+  font-size: 50px;
   color: #333333;
   max-width: 70vw;
+  margin-bottom: 40px;
+  margin-top: 20px;
 }
 
 .events-section-events-container {
@@ -142,14 +143,22 @@
   border-radius: 25px;
   /* z-index:1; */
 }
+.image-container:hover{
+  transform: translateY(-10px);
+  transition: 0.25s ease-in-out;
+}
 
 .image-container.stacked-1 {
   position: relative;
   right: 20px;
 }
+
 .image-container.stacked-2 {
   position: relative;
   right: 40px;
+}
+.image-container.stacked-2:hover {
+  transform: translateY(-10px);
 }
 .image-container.stacked-3 {
   background-color: white;
@@ -162,6 +171,9 @@
   font-size: 22px;
   position: relative;
   right: 60px;
+}
+.image-container.stacked-3:hover {
+  transform: translateY(-10px);
 }
 .text-container {
   background-color: #7ac717;

@@ -151,5 +151,5 @@ document.addEventListener("DOMContentLoaded", () => {
   injectHeader();
   injectFooter();
   initHeaderLogic();
-  displayDimensions();
+//   displayDimensions();
 });

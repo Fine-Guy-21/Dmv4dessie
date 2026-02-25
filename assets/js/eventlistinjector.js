@@ -1,12 +1,12 @@
 const CONSTANT_TIME = {
   start: "9:30 am",
-  end: "17:30 pm"
+  end: "17:30 pm",
 };
 
 const CONSTANT_SPEAKERS = [
   { id: 1, avatar: "assets/images/events/EventPerson1.png" },
   { id: 2, avatar: "assets/images/events/EventPerson2.png" },
-  { id: 3, avatar: "assets/images/events/EventPerson3.png" }
+  { id: 3, avatar: "assets/images/events/EventPerson3.png" },
 ];
 
 const events = [
@@ -16,7 +16,7 @@ const events = [
     date: { day: 18, month: "June", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
+    speakers: CONSTANT_SPEAKERS,
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const events = [
     date: { day: 21, month: "June", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
+    speakers: CONSTANT_SPEAKERS,
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const events = [
     date: { day: 28, month: "June", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
+    speakers: CONSTANT_SPEAKERS,
   },
   {
     id: 4,
@@ -40,7 +40,7 @@ const events = [
     date: { day: 9, month: "July", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
+    speakers: CONSTANT_SPEAKERS,
   },
   {
     id: 5,
@@ -48,7 +48,7 @@ const events = [
     date: { day: 23, month: "July", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
+    speakers: CONSTANT_SPEAKERS,
   },
   {
     id: 6,
@@ -56,22 +56,17 @@ const events = [
     date: { day: 15, month: "August", year: 2026 },
     location: "654 Town Street, 88 United States",
     time: CONSTANT_TIME,
-    speakers: CONSTANT_SPEAKERS
-  }
+    speakers: CONSTANT_SPEAKERS,
+  },
 ];
 
 function injectEvents(eventsList) {
   const container = document.querySelector(".events-section-events-container");
 
-  if (!container) {
-    console.error("Container .events-section-events-container not found");
-    return;
-  }
-
   container.innerHTML = eventsList
-    .map(event => {
+    .map((event) => {
       return `
-        <div class="events-section-event-card">
+        <div class="events-section-event-card" data-aos="fade-up">
           
           <div class="date-month-year-container">
             <div class="date">${event.date.day}</div>
@@ -102,11 +97,7 @@ function injectEvents(eventsList) {
               ${event.speakers
                 .map((speaker, index) => {
                   const stackedClass =
-                    index === 1
-                      ? "stacked-1"
-                      : index === 2
-                      ? "stacked-2"
-                      : "";
+                    index === 1 ? "stacked-1" : index === 2 ? "stacked-2" : "";
                   return `
                     <div class="image-container ${stackedClass}">
                       <img src="${speaker.avatar}" alt="speaker" />
@@ -134,7 +125,18 @@ function injectEvents(eventsList) {
     .join("");
 }
 
+function initLogics() {
+  const eventDetailButtons = document.querySelectorAll(".event-detail-btn");
+
+  eventDetailButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const eventId = button.dataset.id;
+      window.location.href = `event-detail.html?id=${eventId}`;
+    });
+  });
+}
 
 document.addEventListener("DOMContentLoaded", function () {
   injectEvents(events);
+  initLogics();
 });

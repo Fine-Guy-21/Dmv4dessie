@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/event/event.css" />
     <link rel="stylesheet" href="assets/css/about/cards.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
   <body>
     <!-- header begin-->
-    <header class="header-container"></header>
+    <header class="header-container" data-aos="fade-down"></header>
 
     <!-- header ends  -->
 
     <!-- Events Section  -->
 
     <section class="events-section">
-      <div class="events-section-subtitle">
+      <div class="events-section-subtitle" data-aos="fade-right">
         <div class="line"></div>
         <h3>Upcoming Events</h3>
       </div>
-      <div class="events-section-title">
+      <div class="events-section-title" data-aos="fade-up">
         <h2>Take part in our most recent events</h2>
       </div>
-      <div class="events-section-events-container"></div>
+      <div class="events-section-events-container" data-aos="zoom-in"></div>
     </section>
 
     <!-- Events section ends -->
@@ -37,8 +39,8 @@
         <div class="line"></div>
       </div>
 
-      <div class="donors-card-container">
-        <div class="donors-card">
+      <div class="donors-card-container" >
+        <div class="donors-card" data-aos="fade-left" data-aos-delay="200">
           <div class="donors-card-image-container">
             <img
               src="assets/images/about/logo-placeholder.png"
@@ -50,7 +52,7 @@
           <!-- <h3 class="donors-card-title">Volunteer</h3> -->
         </div>
         <!-- donor-card end -->
-        <div class="donors-card">
+        <div class="donors-card" data-aos="fade-left" data-aos-delay="400">
           <div class="donors-card-image-container">
             <img
               src="assets/images/about/logo-placeholder.png"
@@ -62,7 +64,7 @@
           <!-- <h3 class="donors-card-title">Volunteer</h3> -->
         </div>
         <!-- donor-card end -->
-        <div class="donors-card">
+        <div class="donors-card" data-aos="fade-left" data-aos-delay="600">
           <div class="donors-card-image-container">
             <img
               src="assets/images/about/logo-placeholder.png"
@@ -74,7 +76,7 @@
           <!-- <h3 class="donors-card-title">Volunteer</h3> -->
         </div>
         <!-- donor-card end -->
-        <div class="donors-card">
+        <div class="donors-card" data-aos="fade-left" data-aos-delay="800">
           <div class="donors-card-image-container">
             <img
               src="assets/images/about/logo-placeholder.png"
@@ -91,9 +93,18 @@
     <!-- donor-section end -->
 
     <!-- footer beign -->
-    <footer class="footer-container"></footer>
+    <footer class="footer-container" data-aos="fade-up"></footer>
     <!-- footer ends -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/eventlistinjector.js"></script>
+    <!-- AOS JavaScript Initialization -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        offset: 100,
+        once: true,
+      });
+    </script>
   </body>
 </html>
