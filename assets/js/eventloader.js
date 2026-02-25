@@ -8,7 +8,7 @@ const events = [
     imageurl:"assets/images/events/Event1.png",
     date: { day: 18, month: "June" },
     organizedBy: "Sharmii",
-    title: "Education for Poor Children",
+    title: "Education for poor children",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   },
@@ -17,7 +17,7 @@ const events = [
     imageurl:"assets/images/events/Event2.png",
     date: { day: 21, month: "June" },
     organizedBy: "Nattasha",
-    title: "Healthy Food for Growing",
+    title: "Healthy food for growing",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   },
@@ -26,7 +26,7 @@ const events = [
     imageurl:"assets/images/events/Event3.png",
     date: { day: 28, month: "June" },
     organizedBy: "Shanika",
-    title: "Cloth Conning",
+    title: "Cloth coming",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   },
@@ -35,7 +35,7 @@ const events = [
     imageurl:"assets/images/events/Event4.png",
     date: { day: 9, month: "July" },
     organizedBy: "Sachin",
-    title: "Love to Help Awarness Event",
+    title: "Love to help awarness event",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   },
@@ -44,7 +44,7 @@ const events = [
     imageurl:"assets/images/events/Event5.png",
     date: { day: 23, month: "July" },
     organizedBy: "Savin",
-    title: "Raise Your Hands Against Cancer",
+    title: "Raise your hands against cancer",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   },
@@ -53,7 +53,7 @@ const events = [
     imageurl:"assets/images/events/Event6.png",
     date: { day: 15, month: "August" },
     organizedBy: "Rithvik",
-    title: "Compaign: Fund Raising for Water",
+    title: "Compaign: Fund raising for water",
     description:
       "There are many variations of passages of injected Lorem Ipsum available, but the majority have."
   }

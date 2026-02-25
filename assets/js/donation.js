@@ -85,7 +85,7 @@ function createCard(cause) {
       </div>
 
       <button class="donate-btn" onClick=(openDonationdetail())>
-        Donate Now ↗
+        Donate Now <span class="custom-btn-arrow"></span>
       </button>
 
     </div>
